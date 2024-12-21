@@ -9,7 +9,7 @@ using namespace std;
 
 
 
-// Node for linked list 
+// Node for linked list
 template<typename T>
 class Node {
 public:
