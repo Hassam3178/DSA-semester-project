@@ -99,3 +99,23 @@ public:
         }
     }
 };
+class Stack {
+private:
+    LinkedList<int> stackList;
+public:
+    void push(int value) {
+        stackList.append(value);
+    }
+
+    int pop() {
+        return stackList.pop();
+    }
+
+    bool isEmpty() {
+        return stackList.isEmpty();
+    }
+
+    void displayStack() {
+        stackList.display();
+    }
+};
