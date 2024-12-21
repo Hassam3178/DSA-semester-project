@@ -157,3 +157,14 @@ public:
         table[index].append({examTitle, {score}}); 
     }
 };
+
+
+// Instructor class
+class Instructor {
+    private:
+    QuestionQueue questionQueue;
+    LinkedList<string> examTitles;
+    LinkedList<Question> savedQuestions;
+                 
+
+};
