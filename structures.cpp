@@ -61,3 +61,26 @@ public:
         return value;
     }
 };
+
+
+
+
+class ResultList {
+private:
+    Node<pair<string, int>>* head;
+    Node<pair<string, int>>* tail;
+public:
+    ResultList() : head(nullptr), tail(nullptr) {}
+
+    void addResult(string examTitle, int score) {
+        Node<pair<string, int>>* newNode = new Node<pair<string, int>>({examTitle, score});
+        if (!head) {
+            head = tail = newNode;
+        } else {
+            tail->next = newNode;
+            tail = newNode;
+        }
+    }
+
+    
+};
