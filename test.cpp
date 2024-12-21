@@ -9,7 +9,7 @@ using namespace std;
 
 
 
-
+// Node for linked list 
 template<typename T>
 class Node {
 public:
@@ -18,6 +18,8 @@ public:
 
     Node(T value) : data(value), next(nullptr) {}
 };
+
+//Linked List Implementation
 template<typename T>
 class LinkedList {
 private:
@@ -71,6 +73,7 @@ public:
     }
 };
 
+//Linked List for results
 class ResultList {
 private:
     Node<pair<string, int>>* head;
