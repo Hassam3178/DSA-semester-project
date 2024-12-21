@@ -129,3 +129,17 @@ void bubbleSort(vector<int>& arr) {
         }
     }
 }
+
+class HashMap {
+private:
+    static const int BUCKETS = 10;
+    LinkedList<pair<string, vector<int>>> table[BUCKETS];
+
+    int hashFunction(const string& key) {
+        int hash = 0;
+        for (char c : key) {
+            hash += c;
+        }
+        return hash % BUCKETS;  
+    }
+};
