@@ -81,6 +81,12 @@ public:
             tail = newNode;
         }
     }
-
+void displayResults() {
+        Node<pair<string, int>>* current = head;
+        while (current) {
+            cout << "Exam: " << current->data.first << " - Score: " << current->data.second << endl;
+            current = current->next;
+        }
+    }
     
 };
