@@ -1,4 +1,8 @@
 #include<iostream>
+#include <string>
+#include <vector>
+#include <fstream>
+#include <cctype>
 using namespace std;
 
 
