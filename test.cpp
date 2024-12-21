@@ -142,4 +142,18 @@ private:
         }
         return hash % BUCKETS;  
     }
+
+public:
+    void addScore(const string& examTitle, int score) {
+        int index = hashFunction(examTitle);  
+        Node<pair<string, vector<int>>>* current = table[index].getHead();  
+        while (current) {
+            if (current->data.first == examTitle) {  
+                current->data.second.push_back(score);  
+                return;
+            }
+            current = current->next;  
+        }
+        table[index].append({examTitle, {score}}); 
+    }
 };
